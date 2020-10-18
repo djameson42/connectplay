@@ -6,11 +6,15 @@ services:
       - db-data:/var/lib/rethinkdb
   webapp:
     image: djameson/flask_rethink
+
+  reverseproxy:
+    image: nginx
     ports:
-      - target: 5000 
-        published: 80
-        protocol: tcp
-        mode: host
+      - 80:80
+      - 443:443
+    volumes:
+      - /home/ansible/config/nginx.conf:/etc/nginx/nginx.conf
+      - /home/ansible/config/private:/etc/nginx/private
 
 volumes:
   db-data:

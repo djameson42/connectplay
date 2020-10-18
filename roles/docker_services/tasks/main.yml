@@ -3,6 +3,32 @@
     path: /home/ansible/deploy
     state: directory
 
+- name: create config directory
+  file:
+    path: /home/ansible/config
+    state: directory
+
+- name: create ssl directory
+  file:
+    path: /home/ansible/config/private
+    state: directory
+
+
+- name: copy nginx configuration over
+  template:
+    src: nginx.conf
+    dest: /home/ansible/config/nginx.conf
+
+- name: copy ssl crt over
+  template:
+    src: ssl-cert.crt 
+    dest: /home/ansible/config/private/ssl-cert.crt
+
+- name: copy ssl key over
+  template:
+    src: ssl-key.key
+    dest: /home/ansible/config/private/ssl-key.key
+
 - name: copy stack.yml file over 
   template:
     src: docker-compose.yml

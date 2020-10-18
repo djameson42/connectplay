@@ -17,5 +17,11 @@
     permanent: true
     state: enabled
 
+- name: open https port 
+  firewalld:
+    service: https
+    permanent: true
+    state: enabled
+
 - name: restart firewalld
   service: name=firewalld state=restarted

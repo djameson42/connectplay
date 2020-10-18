@@ -1,0 +1,90 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            25:f1:41:2d:da:a4:98:b5:5a:92:ff:87:10:57:63:e9
+    Signature Algorithm: sha256WithRSAEncryption
+        Issuer: CN=Easy-RSA CA
+        Validity
+            Not Before: Oct 18 03:06:49 2020 GMT
+            Not After : Jan 21 03:06:49 2023 GMT
+        Subject: C=NZ, ST=Auckland, L=Auckland City, O=Test Org, CN=connectplay.test.xyz/emailAddress=david.mck.jameson@gmail.com
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (2048 bit)
+                Modulus:
+                    00:9c:91:3e:17:08:96:81:94:e0:e5:2d:a8:4a:fa:
+                    95:a1:16:82:48:f6:ca:78:57:9a:ad:07:0a:a5:24:
+                    a0:4b:9b:74:2d:10:a3:ab:d7:23:3e:97:a5:a0:84:
+                    2f:3c:4e:34:11:68:f7:e8:77:d8:bc:bc:f3:84:aa:
+                    29:6f:20:cc:5e:70:44:5b:d1:20:f7:ce:14:02:c9:
+                    2b:17:51:4f:65:16:d2:82:d8:60:f0:91:b1:38:ce:
+                    43:1e:de:0d:42:f8:fb:9f:6b:fa:b4:0d:51:4c:f6:
+                    5b:3a:34:22:74:ef:d4:10:f8:4f:36:7d:66:a7:d6:
+                    b6:ca:7f:6b:87:bb:8d:15:2b:19:74:34:79:fd:13:
+                    44:79:0d:27:da:0e:f8:49:e2:1f:5c:b2:b0:d7:69:
+                    cc:96:d9:bf:f0:03:f1:c9:40:c4:b9:ab:42:99:43:
+                    1e:f3:3d:da:b4:70:e0:fe:5f:e6:88:f9:c7:aa:b5:
+                    12:b3:4d:6e:c1:f6:66:29:d9:a1:ab:97:c6:9e:9b:
+                    93:b5:5b:76:c8:d5:6b:dc:cb:fd:26:14:fb:e0:02:
+                    25:6d:53:60:27:af:ee:c6:7d:e1:40:f9:52:e9:fe:
+                    33:07:98:4e:53:d8:78:63:98:29:f2:0f:e3:59:ed:
+                    80:dd:01:2d:ef:a6:ab:c4:04:b9:7c:2d:15:46:c4:
+                    5a:7f
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Basic Constraints: 
+                CA:FALSE
+            X509v3 Subject Key Identifier: 
+                DF:AA:DA:E0:01:27:43:C6:C7:F8:02:34:44:C5:C5:4F:75:3D:9C:84
+            X509v3 Authority Key Identifier: 
+                keyid:5A:D6:FC:86:69:25:DA:35:A3:E3:9C:9C:CF:4C:09:39:E2:BE:5B:22
+                DirName:/CN=Easy-RSA CA
+                serial:96:9C:FC:FE:FA:84:CB:03
+
+            X509v3 Extended Key Usage: 
+                TLS Web Server Authentication
+            X509v3 Key Usage: 
+                Digital Signature, Key Encipherment
+            X509v3 Subject Alternative Name: 
+                DNS:connectplay.test.xyz
+    Signature Algorithm: sha256WithRSAEncryption
+         02:5f:b4:06:a3:a7:d1:fb:7d:5a:22:75:eb:c6:4f:17:59:7f:
+         9e:df:ce:5f:3b:b8:54:94:33:86:2b:95:98:3f:48:22:1b:59:
+         9a:2d:a4:30:2f:81:b1:d5:43:c2:47:df:e1:b3:df:c3:5d:b2:
+         1a:2e:7b:10:15:df:88:a2:5c:50:a3:c5:44:d4:8c:ed:b8:4e:
+         0d:91:52:85:f3:27:e5:5e:01:84:8a:9a:64:7c:b3:44:af:10:
+         cf:b3:a8:01:00:dd:b5:f7:51:65:e3:bd:f1:f2:4a:22:f1:73:
+         2e:82:0d:9e:64:62:e0:42:8b:2f:3d:8f:79:09:af:e0:e9:d9:
+         39:99:e7:c8:92:b3:c8:9a:d8:bb:5c:27:9f:f6:37:1f:f1:cc:
+         30:67:39:51:e7:56:99:65:7c:28:0e:fc:5e:e7:84:3d:6c:8c:
+         4e:cb:bb:74:a7:8f:62:ec:43:9c:a6:5b:97:c9:f5:a2:11:ef:
+         07:34:be:c1:4e:e5:33:8b:2e:a9:c9:b1:54:77:b9:78:d9:bd:
+         83:cc:bc:b3:dd:54:73:79:95:2e:46:60:8f:19:dc:1d:c0:f4:
+         4c:c7:8a:28:32:8b:68:39:23:f9:a5:7b:90:a4:48:12:4b:a7:
+         12:73:76:75:3b:29:89:93:49:3b:7a:31:bc:5c:e5:c4:82:56:
+         82:23:cc:28
+-----BEGIN CERTIFICATE-----
+MIID8DCCAtigAwIBAgIQJfFBLdqkmLVakv+HEFdj6TANBgkqhkiG9w0BAQsFADAW
+MRQwEgYDVQQDDAtFYXN5LVJTQSBDQTAeFw0yMDEwMTgwMzA2NDlaFw0yMzAxMjEw
+MzA2NDlaMIGWMQswCQYDVQQGEwJOWjERMA8GA1UECAwIQXVja2xhbmQxFjAUBgNV
+BAcMDUF1Y2tsYW5kIENpdHkxETAPBgNVBAoMCFRlc3QgT3JnMR0wGwYDVQQDDBRj
+b25uZWN0cGxheS50ZXN0Lnh5ejEqMCgGCSqGSIb3DQEJARYbZGF2aWQubWNrLmph
+bWVzb25AZ21haWwuY29tMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA
+nJE+FwiWgZTg5S2oSvqVoRaCSPbKeFearQcKpSSgS5t0LRCjq9cjPpeloIQvPE40
+EWj36HfYvLzzhKopbyDMXnBEW9Eg984UAskrF1FPZRbSgthg8JGxOM5DHt4NQvj7
+n2v6tA1RTPZbOjQidO/UEPhPNn1mp9a2yn9rh7uNFSsZdDR5/RNEeQ0n2g74SeIf
+XLKw12nMltm/8APxyUDEuatCmUMe8z3atHDg/l/miPnHqrUSs01uwfZmKdmhq5fG
+npuTtVt2yNVr3Mv9JhT74AIlbVNgJ6/uxn3hQPlS6f4zB5hOU9h4Y5gp8g/jWe2A
+3QEt76arxAS5fC0VRsRafwIDAQABo4G4MIG1MAkGA1UdEwQCMAAwHQYDVR0OBBYE
+FN+q2uABJ0PGx/gCNETFxU91PZyEMEYGA1UdIwQ/MD2AFFrW/IZpJdo1o+OcnM9M
+CTnivlsioRqkGDAWMRQwEgYDVQQDDAtFYXN5LVJTQSBDQYIJAJac/P76hMsDMBMG
+A1UdJQQMMAoGCCsGAQUFBwMBMAsGA1UdDwQEAwIFoDAfBgNVHREEGDAWghRjb25u
+ZWN0cGxheS50ZXN0Lnh5ejANBgkqhkiG9w0BAQsFAAOCAQEAAl+0BqOn0ft9WiJ1
+68ZPF1l/nt/OXzu4VJQzhiuVmD9IIhtZmi2kMC+BsdVDwkff4bPfw12yGi57EBXf
+iKJcUKPFRNSM7bhODZFShfMn5V4BhIqaZHyzRK8Qz7OoAQDdtfdRZeO98fJKIvFz
+LoINnmRi4EKLLz2PeQmv4OnZOZnnyJKzyJrYu1wnn/Y3H/HMMGc5UedWmWV8KA78
+XueEPWyMTsu7dKePYuxDnKZbl8n1ohHvBzS+wU7lM4suqcmxVHe5eNm9g8y8s91U
+c3mVLkZgjxncHcD0TMeKKDKLaDkj+aV7kKRIEkunEnN2dTspiZNJO3oxvFzlxIJW
+giPMKA==
+-----END CERTIFICATE-----
