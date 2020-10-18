@@ -1,10 +1,9 @@
 - name: install fail2ban 
   yum:
-    name: "{{ item }}"
+    name: 
+      - fail2ban
+      - fail2ban-systemd
     state: latest
-  with_items:
-    - fail2ban
-    - fail2ban-systemd
 
 - name: copy fail2ban.jail.local to /etc/fail2ban/jail.local
   template:
