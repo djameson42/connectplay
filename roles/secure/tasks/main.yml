@@ -1,0 +1,33 @@
+- name: install fail2ban 
+  yum:
+    name: "{{ item }}"
+    state: latest
+  with_items:
+    - fail2ban
+    - fail2ban-systemd
+
+- name: copy fail2ban.jail.local to /etc/fail2ban/jail.local
+  template:
+    src: fail2ban.jail.local
+    dest: /etc/fail2ban/jail.local
+    mode: 0644
+    owner: root
+    group: root
+  notify:
+    - restart fail2ban
+
+- name: copy fail2ban.sshd.local to /etc/fail2ban/sshd.local
+  template:
+    src: fail2ban.sshd.local
+    dest: /etc/fail2ban/jail.d/sshd.local
+    mode: 0644
+    owner: root
+    group: root
+  notify:
+    - restart fail2ban
+
+- name: enable and start fail2ban 
+  systemd:
+    name: fail2ban
+    enabled: yes
+    state: started

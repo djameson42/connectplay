@@ -1,0 +1,8 @@
+[DEFAULT]
+
+ignoreip = 127.0.0.1/8
+banaction = iptables-multiport
+bantime = 600
+findtime = 600
+maxretry = 5
+

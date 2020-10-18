@@ -4,3 +4,4 @@
 
   roles:
     - standard_setup
+    - secure
