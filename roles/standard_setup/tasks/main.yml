@@ -23,5 +23,6 @@
     permanent: true
     state: enabled
 
-- name: restart firewalld
-  service: name=firewalld state=restarted
+- name: Reboot machine (to apply kernel updates)
+  reboot:
+
