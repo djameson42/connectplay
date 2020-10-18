@@ -2,5 +2,8 @@
   hostname:
     name: connectplay
 
+- name: install EPEL repo
+  yum: name=epel-release state=present
+
 - name: upgrade all packages
   yum: name=* state=latest
