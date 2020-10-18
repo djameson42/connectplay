@@ -1,0 +1,47 @@
+I set up the centos 7 vm with KVM/Libvirt. I have not documented the initial vm
+setup but I selected a minimal centos 7 install and configured a static ip on the
+ethernet adapter. I also set up an 'ansible' user and added it to the wheel group.
+
+I did the bonus goal of using rethinkdb and setting up a TLS enabled web-app. 
+
+For the web app I wrote a simple python/flask program that just prints out if
+it can connect to the rethinkdb database. I put in on docker hub under djameson/flask_rethink
+and pull the image in the playbook. 
+
+As part of setting up the TLS I created a CA and generated a CSR for a madeup 
+domain name - connectplay.test.xyz. I used the CA to accept the CSR and then imported
+the CA certificate into my web browser. I did this on my local machine and the process
+was like this:
+
+yum install easy-rsa
+mkdir easy-rsa
+ln -s /usr/share/easy-rsa/3/* ~/easy-rsa/
+./easyrsa init-pki
+./easyrsa build-ca
+
+openssl req -new -key connectplay.key -out connectplay.req
+./easyrsa import-req connectplay.req
+./easyrsa sign-req server connectplay
+
+I then edited my host file to point the madeup domain to the vm.
+
+The playbook does the following:
+
+- Set system hostname
+- Upgrades packages and reboots machine to apply kernel updates
+- Opens HTTP and HTTPS ports on the firewall
+- Sets up fail2ban to ban IPs after incorrect ssh login attempts
+- Installs docker and docker-compose
+- Brings up the nginx, database and web app containers
+
+If I spent more time I would consider:
+
+- Changing default SSH port
+- Not leavng the TLS keys lying on the VM
+- Non root docker containers
+- Set up persistent logging for the containers
+
+
+The playbook can be run by navigating to the playbook directory and running:
+
+ansible-playbook setup.yml --ask-pass -K
