@@ -29,7 +29,7 @@
     src: ssl-key.key
     dest: /home/ansible/config/private/ssl-key.key
 
-- name: copy stack.yml file over 
+- name: copy docker-compose.yml file over 
   template:
     src: docker-compose.yml
     dest: /home/ansible/deploy/docker-compose.yml
