@@ -7,3 +7,6 @@
 
 - name: upgrade all packages
   yum: name=* state=latest
+
+- name: install yum-utils
+  yum: name=yum-utils state=present
