@@ -6,3 +6,4 @@
     - standard_setup
     - secure
     - docker_install
+    - docker_services

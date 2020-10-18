@@ -1,0 +1,17 @@
+version: "3.8"
+services:
+  db:
+    image: rethinkdb
+    volumes:
+      - db-data:/var/lib/rethinkdb
+  webapp:
+    image: djameson/flask_rethink
+    ports:
+      - target: 5000 
+        published: 80
+        protocol: tcp
+        mode: host
+
+volumes:
+  db-data:
+

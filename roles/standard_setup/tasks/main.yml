@@ -10,3 +10,12 @@
 
 - name: install yum-utils
   yum: name=yum-utils state=present
+
+- name: open http port 
+  firewalld:
+    service: http
+    permanent: true
+    state: enabled
+
+- name: restart firewalld
+  service: name=firewalld state=restarted

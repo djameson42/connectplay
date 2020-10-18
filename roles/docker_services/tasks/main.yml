@@ -1,0 +1,13 @@
+- name: create deploy directory
+  file: 
+    path: /home/ansible/deploy
+    state: directory
+
+- name: copy stack.yml file over 
+  template:
+    src: docker-compose.yml
+    dest: /home/ansible/deploy/docker-compose.yml
+
+- name: deploy 
+  command: /usr/local/sbin/docker-compose -f /home/ansible/deploy/docker-compose.yml up -d
+
