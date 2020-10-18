@@ -42,6 +42,7 @@ If I spent more time I would consider:
 - Set up persistent logging for the containers
 
 
-The playbook can be run by navigating to the playbook directory and running:
+The playbook can be run by editing the hosts file in inventories/hosts and 
+navigating to the playbook directory and running:
 
 ansible-playbook setup.yml --ask-pass -K
