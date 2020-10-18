@@ -1,0 +1,6 @@
+- name: Connectplay setup playbook
+  hosts: all
+  become: yes
+
+  roles:
+    - standard_setup

@@ -1,0 +1,6 @@
+- name: set system hostname
+  hostname:
+    name: connectplay
+
+- name: upgrade all packages
+  yum: name=* state=latest
